@@ -44,7 +44,7 @@ public Result<string> GetGreeting(string name)
 {
     if (string.IsNullOrEmpty(name))
     {
-        return (HttpStatusCode.BadRequest, "Name cannot be empty");
+        return (400, "Name cannot be empty");
     }
     return $"Hello, {name}!";
 }
