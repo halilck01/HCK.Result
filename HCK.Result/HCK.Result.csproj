@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Operation Result</Title>
-    <Version>8.0.1</Version>
+    <Version>8.0.2</Version>
     <Description>Result Handler for .NET</Description>
     <Copyright>@2024 Halil Can KORKMAZ. All Rights Reserved.</Copyright>
     <PackageReadmeFile>README.md</PackageReadmeFile>
