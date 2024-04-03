@@ -49,5 +49,9 @@ namespace HCK.Result
         {
             return new(statusCode, errorMessages);
         }
+        public static Result<T> Failure(int statusCode, string errorMessages)
+        {
+            return new(statusCode, errorMessages);
+        }
     }
 }
