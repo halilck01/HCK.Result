@@ -64,6 +64,27 @@ else
 }
 ```
 
+- **For error using Failure method**:
+- **One error message**
+```csharp
+Result<string> result = Result<string>.Failure("Is fail!");
+```
+
+- **Multiple error messages**
+```csharp
+Result<string> result = Result<string>.Failure(new List<string>() {"Is fail!","Is not unique!"});
+```
+
+- **One error message return 500 status code**
+```csharp
+Result<string> result = Result<string>.Failure("Is fail!"); //return 500 status code
+```
+
+- **Multiple error messages return 500 status code**
+```csharp
+Result<string> result = Result<string>.Failure(new List<string>() {"Is fail!","Is not unique!"}); //return 500 status code
+```
+
 ## Contributing
 
 We welcome contributions! Please submit any bug reports, suggestions, or pull requests to the project's issue tracker or repository.
